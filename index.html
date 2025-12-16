@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>İrem Varan | Kişisel Web Sitesi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container">
+    <nav class="nav">
+      <div class="logo">İrem Varan</div>
+      <div class="links">
+        <a href="#about">Hakkımda</a>
+        <a href="#projects">Projeler</a>
+        <a href="#contact">İletişim</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <h1>Merhaba, ben İrem 👋</h1>
+      <p>4. sınıf Yazılım Mühendisliği öğrencisiyim. Web geliştirme ve yapay zekâ projeleri yapıyorum.</p>
+      <div class="buttons">
+        <a class="btn" href="#projects">Projelerimi Gör</a>
+        <a class="btn ghost" href="#contact">İletişime Geç</a>
+      </div>
+    </section>
+  </header>
+
+  <main class="container">
+    <section id="about" class="card">
+      <h2>Hakkımda</h2>
+      <p>
+        Malatya Turgut Özal Üniversitesi’nde Yazılım Mühendisliği okuyorum.
+        Django/JS, veritabanı ve ML tarafında projeler geliştiriyorum.
+      </p>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projeler</h2>
+      <div class="grid">
+        <article class="project">
+          <h3>BiButik</h3>
+          <p>HTML/CSS/JS ile butik site. Sepet/sipariş akışı.</p>
+        </article>
+        <article class="project">
+          <h3>MTÜ Turnuva Platformu</h3>
+          <p>Django ile turnuva sistemi: kayıt, başvuru, admin panel.</p>
+        </article>
+        <article class="project">
+          <h3>Film Öneri Sistemi</h3>
+          <p>MovieLens + IMDb duygu analizi ile hibrit öneri.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>İletişim</h2>
+      <p>Mail: <a href="mailto:ornek@mail.com">ornek@mail.com</a></p>
+      <p>GitHub: <a href="https://github.com/" target="_blank">github.com/...</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/" target="_blank">linkedin.com/in/...</a></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> İrem Varan</div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
