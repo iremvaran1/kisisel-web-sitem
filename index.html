@@ -4,205 +4,294 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>İrem Varan | Kişisel Web Sitesi</title>
+  <meta name="description" content="İrem Varan - Yazılım Mühendisliği öğrencisi. Web, yapay zekâ ve veri odaklı projeler." />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <header class="top">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="#home" aria-label="Ana sayfa">
+          <span class="brandDot"></span>
+          <span class="brandText">İrem Varan</span>
+        </a>
 
-<header class="top">
-  <div class="container">
-    <nav class="nav">
-      <div class="logo">İrem Varan</div>
-      <div class="links">
-        <a href="#about">Hakkımda</a>
-        <a href="#timeline">Deneyim</a>
-        <a href="#projects">Projeler</a>
-        <a href="#skills">Yetenekler</a>
-        <a href="#contact">İletişim</a>
+        <button class="menuBtn" id="menuBtn" aria-label="Menüyü aç/kapat" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <div class="links" id="navLinks">
+          <a href="#about">Hakkımda</a>
+          <a href="#timeline">Eğitim & Deneyim</a>
+          <a href="#projects">Projeler</a>
+          <a href="#skills">Yetenekler</a>
+          <a href="#contact">İletişim</a>
+        </div>
+      </nav>
+
+      <section id="home" class="hero">
+        <div class="heroLeft">
+          <div class="badge">Web • AI • Veri</div>
+          <h1 class="title">
+            Merhaba, ben <span class="grad">İrem</span> 👋
+          </h1>
+          <p class="subtitle">Yazılım Mühendisliği Öğrencisi · Web & AI</p>
+          <p class="desc">
+            4. sınıf Yazılım Mühendisliği öğrencisiyim. Web geliştirme ve veri odaklı yapay zekâ projeleri üzerinde çalışıyorum.
+            Amacım; kullanıcı odaklı, düzenli ve sürdürülebilir yazılımlar geliştirmek.
+          </p>
+
+          <div class="cta">
+            <a class="btn" href="#projects">Projelerimi Gör</a>
+            <a class="btn ghost" href="#contact">İletişime Geç</a>
+            <a class="btn soft" href="#timeline">Deneyimi İncele</a>
+          </div>
+
+          <div class="quick">
+            <div class="qItem">
+              <div class="qNum">3+</div>
+              <div class="qText">Portföy Projesi</div>
+            </div>
+            <div class="qItem">
+              <div class="qNum">Web</div>
+              <div class="qText">Frontend ağırlıklı</div>
+            </div>
+            <div class="qItem">
+              <div class="qNum">AI</div>
+              <div class="qText">ML / CV ilgisi</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="heroRight">
+          <div class="avatarWrap">
+            <!-- Fotoğraf yolu: img/profile.jpg -->
+            <img src="img/profile.jpg" alt="İrem Varan profil fotoğrafı" class="avatar" />
+          </div>
+
+          <div class="social">
+            <a class="iconBtn" href="https://github.com/iremvaran1" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="iconBtn" href="https://www.linkedin.com/in/irem-varan/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="iconBtn" href="mailto:iremvaran1@gmail.com">Mail</a>
+          </div>
+
+          <div class="miniCard">
+            <h3>Şu an odak</h3>
+            <p>Portföyümü güçlendirmek, projeleri dokümante etmek ve bitirme projesi için AI/ML yönünde ilerlemek.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hakkımda -->
+    <section id="about" class="card reveal">
+      <div class="sectionHead">
+        <h2>Hakkımda</h2>
+        <p>Kısaca ben, hedeflerim ve ilgilendiğim alanlar.</p>
       </div>
-    </nav>
 
-    <section class="hero" id="home">
-      <img src="img/profile.jpg" alt="İrem Varan" class="avatar">
+      <div class="aboutGrid">
+        <article class="aboutBox">
+          <h3>Ben kimim?</h3>
+          <p>
+            Malatya Turgut Özal Üniversitesi’nde 4. sınıf Yazılım Mühendisliği öğrencisiyim.
+            Web arayüzleri ve veri odaklı yapay zekâ projeleri üretmeyi seviyorum.
+          </p>
+        </article>
 
-      <h1>Merhaba, ben <span class="grad">İrem</span> 👋</h1>
-      <p class="subtitle">Yazılım Mühendisliği Öğrencisi · Web & AI</p>
+        <article class="aboutBox">
+          <h3>Odak Alanlarım</h3>
+          <ul class="cleanList">
+            <li>Frontend: HTML, CSS, JavaScript (responsive + UI/UX)</li>
+            <li>Backend temelleri: Django / veri modelleme mantığı</li>
+            <li>AI/ML: öneri sistemleri, duygu analizi, görüntü işleme</li>
+            <li>Veritabanı: MySQL / SQL</li>
+          </ul>
+        </article>
 
-      <p class="desc">
-        4. sınıf Yazılım Mühendisliği öğrencisiyim.  
-        Web geliştirme ve veri odaklı yapay zekâ projeleri yapıyorum.
-      </p>
+        <article class="aboutBox">
+          <h3>Hedefim</h3>
+          <p>
+            Bitirme projemde AI/ML ve veri işleme alanına yönelmek istiyorum.
+            Özellikle “hastalık tahmin sistemi” gibi gerçek problem çözen bir uygulama geliştirmeyi hedefliyorum.
+          </p>
+        </article>
 
-      <div class="buttons">
-        <a class="btn" href="#projects">Projelerimi Gör</a>
-        <a class="btn ghost" href="#contact">İletişime Geç</a>
+        <article class="aboutBox">
+          <h3>Çalışma tarzım</h3>
+          <ul class="cleanList">
+            <li>Adım adım ilerlerim (plan → geliştirme → test → yayın)</li>
+            <li>Kod düzeni ve okunabilirlik önceliğim</li>
+            <li>Sunum/rapor tarafını da güçlü tutarım</li>
+          </ul>
+        </article>
       </div>
     </section>
-  </div>
-</header>
 
-<main class="container">
-
-  <!-- HAKKIMDA -->
-  <section id="about" class="card reveal">
-    <h2>Hakkımda</h2>
-    <p>
-      Malatya Turgut Özal Üniversitesi’nde Yazılım Mühendisliği okuyorum.
-      Frontend geliştirme, veritabanı yapıları ve makine öğrenmesi projeleriyle ilgileniyorum.
-    </p>
-  </section>
-
-  <!-- EĞİTİM & DENEYİM -->
-  <section id="timeline" class="card reveal">
-    <h2>Eğitim & Deneyim</h2>
-
-    <div class="timeline">
-      <div class="t-item">
-        <div class="t-dot"></div>
-        <div class="t-content">
-          <h3>Yazılım Mühendisliği (4. Sınıf)</h3>
-          <p class="muted">Malatya Turgut Özal Üniversitesi</p>
-        </div>
+    <!-- Eğitim & Deneyim -->
+    <section id="timeline" class="card reveal">
+      <div class="sectionHead">
+        <h2>Eğitim & Deneyim</h2>
+        <p>Öne çıkan eğitim ve staj deneyimlerim.</p>
       </div>
 
-      <div class="t-item">
-        <div class="t-dot"></div>
-        <div class="t-content">
-          <h3>Staj — BİZMED Sinerji ve Danışmanlık</h3>
-          <p class="muted">Delphi (RAD Studio) + Oracle PL/SQL</p>
-          <p>
-            GVHD takip sistemi üzerinde form geliştirme, veri çekme
-            (TOracleDataSet) ve arayüz düzenlemeleri.
-          </p>
+      <div class="timeline">
+        <div class="tItem">
+          <div class="tDot"></div>
+          <div class="tCard">
+            <h3>Yazılım Mühendisliği (4. Sınıf)</h3>
+            <p class="muted">Malatya Turgut Özal Üniversitesi</p>
+            <p class="small">
+              Dersler: Web Programlama, Veritabanı, Makine Öğrenmesi, Görüntü İşleme.
+            </p>
+          </div>
+        </div>
+
+        <div class="tItem">
+          <div class="tDot"></div>
+          <div class="tCard">
+            <h3>Staj — BİZMED Sinerji ve Danışmanlık</h3>
+            <p class="muted">Delphi (RAD Studio) + Oracle PL/SQL</p>
+            <p class="small">
+              GVHD takip sistemi üzerinde form geliştirme, veritabanından veri çekme (TOracleDataSet) ve arayüz düzenlemeleri.
+            </p>
+          </div>
         </div>
       </div>
+    </section>
+
+    <!-- Projeler -->
+    <section id="projects" class="card reveal">
+      <div class="sectionHead">
+        <h2>Projeler</h2>
+        <p>Yaptığım çalışmaların kısa özeti. İstersen linkleri doldururuz.</p>
+      </div>
+
+      <div class="grid">
+        <article class="project">
+          <div class="pTop">
+            <h3>BiButik</h3>
+            <span class="tag">Web</span>
+          </div>
+          <p>HTML/CSS/JS ile butik site. Sepet ve sipariş akışı.</p>
+          <div class="chips mini">
+            <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JS</span><span class="chip">MySQL</span>
+          </div>
+          <div class="pBtns">
+            <a class="pBtn" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="pBtn ghost" href="#contact">İletişim</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="pTop">
+            <h3>MTÜ Turnuva Platformu</h3>
+            <span class="tag">Django</span>
+          </div>
+          <p>Django ile turnuva sistemi: kayıt, başvuru akışı ve admin yönetimi.</p>
+          <div class="chips mini">
+            <span class="chip">Django</span><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">Bootstrap</span>
+          </div>
+          <div class="pBtns">
+            <a class="pBtn" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="pBtn ghost" href="#contact">İletişim</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="pTop">
+            <h3>Film Öneri Sistemi</h3>
+            <span class="tag">AI/ML</span>
+          </div>
+          <p>MovieLens puanları + IMDb yorum duygu analiziyle hibrit öneri.</p>
+          <div class="chips mini">
+            <span class="chip">Python</span><span class="chip">Pandas</span><span class="chip">NLP</span><span class="chip">Recommender</span>
+          </div>
+          <div class="pBtns">
+            <a class="pBtn" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="pBtn ghost" href="#contact">İletişim</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Yetenekler -->
+    <section id="skills" class="card reveal">
+      <div class="sectionHead">
+        <h2>Yetenekler</h2>
+        <p>Şu an aktif kullandıklarım ve geliştirdiklerim.</p>
+      </div>
+
+      <div class="skillGrid">
+        <div class="skillCol">
+          <h3>Teknik</h3>
+          <div class="chips">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">Python</span>
+            <span class="chip">Django</span>
+            <span class="chip">MySQL</span>
+            <span class="chip">OpenCV</span>
+            <span class="chip">Machine Learning</span>
+          </div>
+        </div>
+
+        <div class="skillCol">
+          <h3>Güçlü yönler</h3>
+          <ul class="cleanList">
+            <li>Adım adım geliştirme ve hata ayıklama</li>
+            <li>Responsive tasarım ve düzenli arayüz</li>
+            <li>Raporlama / sunuma uygun anlatım</li>
+            <li>Proje takibi ve düzenli dosya yapısı</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- İletişim -->
+    <section id="contact" class="card reveal">
+      <div class="sectionHead">
+        <h2>İletişim</h2>
+        <p>Hızlıca ulaşmak için:</p>
+      </div>
+
+      <div class="contactGrid">
+        <a class="contactItem" href="mailto:iremvaran1@gmail.com">
+          <div class="cTitle">Mail</div>
+          <div class="cValue">iremvaran1@gmail.com</div>
+        </a>
+
+        <a class="contactItem" href="https://github.com/iremvaran1" target="_blank" rel="noreferrer">
+          <div class="cTitle">GitHub</div>
+          <div class="cValue">github.com/iremvaran1</div>
+        </a>
+
+        <a class="contactItem" href="https://www.linkedin.com/in/irem-varan/" target="_blank" rel="noreferrer">
+          <div class="cTitle">LinkedIn</div>
+          <div class="cValue">linkedin.com/in/irem-varan</div>
+        </a>
+      </div>
+
+      <p class="hint">İstersen bir sonraki adımda “çalışan iletişim formu” da ekleyebiliriz (PHP olmadan).</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footRow">
+        <span>© <span id="year"></span> İrem Varan</span>
+        <a class="toTop" href="#home">Yukarı ↑</a>
+      </div>
     </div>
-  </section>
+  </footer>
 
-  <!-- PROJELER -->
-  <section id="projects" class="card reveal">
-    <h2>Projeler</h2>
-
-    <div class="grid">
-
-      <!-- BiButik -->
-      <article class="project">
-        <h3>BiButik</h3>
-        <p>HTML / CSS / JS ile butik e-ticaret sitesi.</p>
-
-        <div class="chips">
-          <span class="chip">HTML</span>
-          <span class="chip">CSS</span>
-          <span class="chip">JavaScript</span>
-          <span class="chip">MySQL</span>
-        </div>
-
-        <div class="pBtns">
-          <a class="pBtn"
-             href="https://github.com/iremvaran1"
-             target="_blank"
-             rel="noopener noreferrer">
-             GitHub
-          </a>
-
-          <a class="pBtn ghost" href="#contact">İletişim</a>
-        </div>
-      </article>
-
-      <!-- Turnuva -->
-      <article class="project">
-        <h3>MTÜ Turnuva Platformu</h3>
-        <p>Django ile turnuva kayıt ve başvuru sistemi.</p>
-
-        <div class="chips">
-          <span class="chip">Django</span>
-          <span class="chip">Python</span>
-          <span class="chip">SQL</span>
-        </div>
-
-        <div class="pBtns">
-          <a class="pBtn"
-             href="https://github.com/iremvaran1"
-             target="_blank"
-             rel="noopener noreferrer">
-             GitHub
-          </a>
-
-          <a class="pBtn ghost" href="#contact">İletişim</a>
-        </div>
-      </article>
-
-      <!-- Film Öneri -->
-      <article class="project">
-        <h3>Film Öneri Sistemi</h3>
-        <p>MovieLens + IMDb duygu analizi ile hibrit öneri.</p>
-
-        <div class="chips">
-          <span class="chip">Python</span>
-          <span class="chip">Pandas</span>
-          <span class="chip">NLP</span>
-        </div>
-
-        <div class="pBtns">
-          <a class="pBtn"
-             href="https://github.com/iremvaran1"
-             target="_blank"
-             rel="noopener noreferrer">
-             GitHub
-          </a>
-
-          <a class="pBtn ghost" href="#contact">İletişim</a>
-        </div>
-      </article>
-
-    </div>
-  </section>
-
-  <!-- YETENEKLER -->
-  <section id="skills" class="card reveal">
-    <h2>Yetenekler</h2>
-
-    <div class="chips">
-      <span class="chip">HTML</span>
-      <span class="chip">CSS</span>
-      <span class="chip">JavaScript</span>
-      <span class="chip">Python</span>
-      <span class="chip">Django</span>
-      <span class="chip">MySQL</span>
-      <span class="chip">OpenCV</span>
-      <span class="chip">Machine Learning</span>
-    </div>
-  </section>
-
-  <!-- İLETİŞİM -->
-  <section id="contact" class="card reveal">
-    <h2>İletişim</h2>
-
-    <p>
-      📧 <a href="mailto:iremvaran1@gmail.com">iremvaran1@gmail.com</a>
-    </p>
-    <p>
-      💻 <a href="https://github.com/iremvaran1" target="_blank">github.com/iremvaran1</a>
-    </p>
-    <p>
-      🔗 <a href="https://www.linkedin.com/in/irem-varan/" target="_blank">
-        linkedin.com/in/irem-varan
-      </a>
-    </p>
-  </section>
-
-</main>
-
-<footer class="footer">
-  <div class="container">
-    © <span id="year"></span> İrem Varan
-  </div>
-</footer>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
-<script src="script.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="script.js"></script>
 </body>
 </html>
